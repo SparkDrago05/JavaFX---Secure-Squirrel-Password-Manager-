@@ -1,0 +1,35 @@
+.stat-card {
+    /* Gradient Background Color from very light blue to something*/
+    -fx-background-color: linear-gradient(to bottom, #40678e, #f0f0f0);
+    -fx-border-color: purple;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-padding: 10px;
+    -fx-margin: 10px;
+    -fx-background-radius: 10px;
+}
+
+.stat-card-number {
+    -fx-text-fill: black;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.stat-card-heading {
+    -fx-text-fill: black;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.stat-card-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    /* -fx-background-color not working */
+}
+
+.stat-card-btn:hover {
+    -fx-background-color: transparent;
+    -fx-text-fill: purple;
+}

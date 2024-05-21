@@ -1,0 +1,147 @@
+#editBtn {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+#editBtn:hover {
+    -fx-background-color: #0056b3;
+}
+
+#cancelBtn {
+    -fx-background-color: #dc3545;
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+#cancelBtn:hover {
+    -fx-background-color: #bd2130;
+}
+
+#saveBtn {
+    -fx-background-color: #28a745;
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+#saveBtn:hover {
+    -fx-background-color: #218838;
+}
+
+#editing-header {
+    -fx-background-color: linear-gradient(to right, #ff9a9e, #fad0c4);
+    -fx-border-color: #e9ecef;
+    -fx-border-width: 1;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10;
+}
+
+.menu-button {
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+.menu-button > .arrow-button {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.menu-button > .arrow-button > .arrow {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.menu-button:openvertically > .arrow-button > .arrow {
+    -fx-padding: 0;
+}
+
+#delete-menu-item {
+    -fx-background-color: #dc3545;
+}
+
+#delete-menu-item:hover {
+    -fx-background-color: #bd2130;
+}
+
+.title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.title-avatar {
+    -fx-font-size: 30px;
+}
+
+.mfx-text-field {
+    -mfx-main: purple;
+    -fx-background-radius: 5;
+    -fx-border-color: lightgray;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+}
+
+.mfx-text-field:focus-within {
+    -fx-border-color: purple;
+}
+
+.mfx-text-field .text-field {
+    -fx-background-color: transparent;
+}
+
+.mfx-text-field:readonly:hover {
+    -fx-background-color: aqua;
+    -fx-cursor: default;
+}
+
+.mfx-text-field:readonly .text-field:hover {
+    -fx-cursor: default;
+}
+
+/* .mfx-text-field:readonly:hover {
+    -fx-background-color: aqua;
+}*/
+
+.mfx-text-field .floating-text {
+    /* -fx-text-fill: white; */
+}
+
+.text-area {
+    -fx-border-color: lightgray;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+}
+
+.text-area:readonly:hover,
+.text-area:readonly:hover .content {
+    -fx-cursor: default;
+    -fx-background-color: aqua;
+}
+
+.mfx-combo-box .combo-popup .virtual-flow {
+    -fx-background-radius: 5;
+    -fx-border-color: #ebebeb;
+    -fx-border-radius: 5;
+  }
+
+.mfx-date-picker .date-picker-popup .content {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-color: #ebebeb;
+    -fx-border-radius: 10;
+    -fx-padding: 15;
+    -fx-min-height: 300;
+}
+
+.mfx-date-picker .date-picker-popup .months-combo,
+.mfx-date-picker .date-picker-popup .years-combo {
+  -mfx-float-mode: disabled;
+  -mfx-scroll-on-open: true;
+  -fx-border-color: transparent;
+  -fx-min-width: 120;
+  -fx-min-height: 40;
+  -fx-font-family: "Open Sans SemiBold";
+}

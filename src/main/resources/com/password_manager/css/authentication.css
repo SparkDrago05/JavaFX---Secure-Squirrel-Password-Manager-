@@ -1,0 +1,38 @@
+#box {
+    -fx-background-image: url('../images/gradient.jpeg');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+#container {
+    -fx-background-color: white; /* Use your desired color code or name */
+}
+
+.link {
+    -fx-text-fill: #0076a3; /* Use your desired color code or name */
+}
+
+.link:hover {
+    -fx-text-fill: #0096c9; /* Use your desired color code or name */
+    -fx-cursor: hand;
+}
+
+.link:visited {
+    -fx-text-fill: #0096c9; /* Use your desired color code or name */
+}
+
+.btn {
+    -fx-background-color: #0076a3; /* Use your desired color code or name */
+    -fx-text-fill: white; /* Use your desired color code or name */
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.btn:hover {
+    -fx-background-color: #0096c9; /* Use your desired color code or name */
+}
+
+.btn:pressed {
+    -fx-background-color: #005c7f; /* Use your desired color code or name */
+}

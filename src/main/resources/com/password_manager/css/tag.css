@@ -1,0 +1,20 @@
+.tag {
+    /* -fx-background-color: linear-gradient(to right, #ff9a9e, #fad0c4); */
+    -fx-background-radius: 5;
+    -fx-border-color: #f4f4f4;
+    -fx-border-radius: 5;
+    -fx-border-width: 1;
+    -fx-padding: 5 10;
+    -fx-text-fill: #000000;
+}
+
+.tag-close-button {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.tag-close-button:hover {
+    -fx-background-color: lightgray; 
+    -fx-border-color: transparent;
+}

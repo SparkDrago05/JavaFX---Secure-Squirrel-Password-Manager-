@@ -1,0 +1,27 @@
+#ds {
+    -fx-background-image: url('../images/bg.jpeg');
+}
+
+#new-btn {
+    -fx-background-color: #4CAF50;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+
+}
+
+.card > .container {
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+}
+
+.card:hover > .container {
+    -fx-background-color: orange;
+}
+/*
+.card:hover {
+    -fx-background-color: lightblue;
+}
+
+.card:pressed {
+    -fx-background-color: lightgreen;
+} */

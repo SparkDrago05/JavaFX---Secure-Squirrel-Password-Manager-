@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+
+        <!-- Database connection settings -->
+        <property name="connection.driver_class">org.sqlite.JDBC</property>
+        <property name="connection.url">jdbc:sqlite:test_db.db</property>
+
+        <!-- <property name="connection.username">sa</property> -->
+        <!-- <property name="connection.password"></property> -->
+
+        <!-- SQL dialect -->
+        <property name="dialect">org.hibernate.community.dialect.SQLiteDialect</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <!-- <property name="hibernate.show_sql">true</property> -->
+        <!-- <property name="hibernate.format_sql"></property> -->
+
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="packagesToScan">com.password_manager</property>
+
+
+        <!-- Names the annotated entity class -->
+        <mapping class="com.password_manager.Models.User" />
+        <mapping class="com.password_manager.Models.LoginInfo" />
+        <mapping class="com.password_manager.Models.Tag" />
+        <mapping class="com.password_manager.Models.TagRel" />
+        <mapping class="com.password_manager.Models.CreditCardInfo" />
+        <mapping class="com.password_manager.Models.Trash" />
+        <!-- <mapping resource="/com/password_manager/Employee.hbm.xml" /> -->
+
+    </session-factory>
+
+</hibernate-configuration>

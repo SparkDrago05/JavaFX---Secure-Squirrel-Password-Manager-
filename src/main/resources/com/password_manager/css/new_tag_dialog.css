@@ -1,0 +1,32 @@
+.mfx-text-field {
+    -mfx-main: purple;
+    -fx-background-radius: 5;
+    -fx-border-color: lightgray;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+}
+
+.mfx-text-field:focus-within {
+    -fx-border-color: purple;
+}
+
+.mfx-text-field .text-field {
+    -fx-background-color: transparent;
+}
+
+.mfx-text-field:readonly:hover {
+    -fx-background-color: aqua;
+    -fx-cursor: default;
+}
+
+.mfx-text-field:readonly .text-field:hover {
+    -fx-cursor: default;
+}
+
+/* .mfx-text-field:readonly:hover {
+    -fx-background-color: aqua;
+}*/
+
+.mfx-text-field .floating-text {
+    /* -fx-text-fill: white; */
+}
