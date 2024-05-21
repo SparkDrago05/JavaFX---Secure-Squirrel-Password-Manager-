@@ -8,7 +8,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-import atlantafx.base.theme.PrimerDark;
 import atlantafx.base.theme.PrimerLight;
 import fr.brouillard.oss.cssfx.CSSFX;
 import java.util.ArrayList;
@@ -22,14 +21,9 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("fxml/auth2.fxml"));
-        // FXMLLoader fxmlLoader = new
-        // FXMLLoader(App.class.getResource("fxml/main_view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("fxml/authentication.fxml"));
         Parent root = fxmlLoader.load();
         scene = new Scene(root, 760, 470);
-        // scene = new Scene(root, 900, 600);
-        // scene.getStylesheets().add(App.class.getResource("authentication.css").toExternalForm());
-        // scene.getStylesheets().add(App.class.getResource("main_view.css").toExternalForm());
         for (String stylesheetName : getStylesheetNames()) {
             scene.getStylesheets().add(App.class.getResource("css/" + stylesheetName).toExternalForm());
         }
