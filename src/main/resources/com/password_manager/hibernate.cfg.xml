@@ -7,7 +7,7 @@
 
         <!-- Database connection settings -->
         <property name="connection.driver_class">org.sqlite.JDBC</property>
-        <property name="connection.url">jdbc:sqlite:test_db.db</property>
+        <property name="connection.url">jdbc:sqlite:data.db</property>
 
         <!-- <property name="connection.username">sa</property> -->
         <!-- <property name="connection.password"></property> -->

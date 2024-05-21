@@ -13,9 +13,6 @@ import atlantafx.base.theme.PrimerLight;
 import fr.brouillard.oss.cssfx.CSSFX;
 import java.util.ArrayList;
 
-/**
- * JavaFX App
- */
 public class App extends Application {
     private static Stage stage;
     private static Scene scene;
@@ -39,8 +36,7 @@ public class App extends Application {
         stage.setScene(scene);
         stage.show();
         this.stage = stage;
-        stage.setTitle("Password Manager");
-
+        stage.setTitle("Secure Squirrel");
         // hostServices
         hostServices = getHostServices();
     }
@@ -48,8 +44,6 @@ public class App extends Application {
     public static void main(String[] args) {
         CSSFX.start();
         Application.setUserAgentStylesheet(new PrimerLight().getUserAgentStylesheet());
-        // Application.setUserAgentStylesheet(new
-        // PrimerDark().getUserAgentStylesheet());
         System.out.println("Application Started");
         launch();
     }
@@ -69,94 +63,4 @@ public class App extends Application {
     public static Stage getStage() {
         return stage;
     }
-
-    /* Method to CREATE an employee in the database */
-    // public int addEmployee(String name, int salary) {
-    // EntityManager entityManager = entityManagerFactory.createEntityManager();
-    // EntityTransaction entityTransaction = null;
-    // int employeeID = 0;
-    // try {
-    // entityTransaction = entityManager.getTransaction();
-    // entityTransaction.begin();
-    // Employee employee = new Employee(name, salary);
-    // entityManager.persist(employee);
-    // entityTransaction.commit();
-    // employeeID = employee.getId();
-    // } catch (Exception e) {
-    // if (entityTransaction != null) {
-    // entityTransaction.rollback();
-    // }
-    // e.printStackTrace();
-    // } finally {
-    // entityManager.close();
-    // }
-    // return employeeID;
-    // }
-
-    // /* Method to READ all the employees */
-    // public void listEmployees() {
-    // EntityManager entityManager = entityManagerFactory.createEntityManager();
-    // EntityTransaction entityTransaction = null;
-    // try {
-    // entityTransaction = entityManager.getTransaction();
-    // entityTransaction.begin();
-    // List<Employee> employees = entityManager.createQuery("from
-    // Employee").getResultList();
-    // for (Employee employee : employees) {
-    // System.out.print("ID: " + employee.getId());
-    // System.out.print(" Name: " + employee.getName());
-    // System.out.println(" Salary: " + employee.getSalary());
-    // }
-    // entityTransaction.commit();
-    // } catch (Exception e) {
-    // if (entityTransaction != null) {
-    // entityTransaction.rollback();
-    // }
-    // e.printStackTrace();
-    // } finally {
-    // entityManager.close();
-    // }
-    // }
-
-    // /* Method to UPDATE salary for an employee */
-    // public void updateEmployee(int EmployeeID, int salary) {
-    // EntityManager entityManager = entityManagerFactory.createEntityManager();
-    // EntityTransaction entityTransaction = null;
-    // try {
-    // entityTransaction = entityManager.getTransaction();
-    // entityTransaction.begin();
-    // Employee employee = entityManager.find(Employee.class, EmployeeID);
-    // employee.setSalary(salary);
-    // entityManager.persist(employee);
-    // entityTransaction.commit();
-    // } catch (Exception e) {
-    // if (entityTransaction != null) {
-    // entityTransaction.rollback();
-    // }
-    // e.printStackTrace();
-    // } finally {
-    // entityManager.close();
-    // }
-    // }
-
-    // /* Method to DELETE an employee from the records */
-    // public void deleteEmployee(int EmployeeID) {
-    // EntityManager entityManager = entityManagerFactory.createEntityManager();
-    // EntityTransaction entityTransaction = null;
-    // try {
-    // entityTransaction = entityManager.getTransaction();
-    // entityTransaction.begin();
-    // Employee employee = entityManager.find(Employee.class, EmployeeID);
-    // entityManager.remove(employee);
-    // entityTransaction.commit();
-    // } catch (Exception e) {
-    // if (entityTransaction != null) {
-    // entityTransaction.rollback();
-    // }
-    // e.printStackTrace();
-    // } finally {
-    // entityManager.close();
-    // }
-    // }
-
 }

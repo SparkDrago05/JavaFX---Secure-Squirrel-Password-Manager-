@@ -259,6 +259,7 @@ public class KanbanController implements Initializable {
                             } finally {
                                 entityManager.close();
                             }
+                            DB.disconnect();
                         });
                         cardMenuBtn.getItems().add(restoreBtn);
 
@@ -310,6 +311,7 @@ public class KanbanController implements Initializable {
                             } finally {
                                 entityManager.close();
                             }
+                            DB.disconnect();
                         });
                         cardMenuBtn.getItems().add(deleteBtn);
                         cardHeader.setAction(cardMenuBtn);
@@ -458,6 +460,7 @@ public class KanbanController implements Initializable {
         } finally {
             entityManager.close();
         }
+        DB.disconnect();
     }
 
     public void setMainViewController(MainView mainViewController) {

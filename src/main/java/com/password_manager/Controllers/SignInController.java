@@ -116,6 +116,7 @@ public class SignInController implements Initializable {
                 entityManager.close();
             }
         }
+        DB.disconnect();
     }
 
     private void persistUser(EntityManager entityManager, User user) {
@@ -182,6 +183,7 @@ public class SignInController implements Initializable {
         } finally {
             entityManager.close();
         }
+        DB.disconnect();
     }
 
 }

@@ -303,6 +303,7 @@ public class FormController implements Initializable {
         } finally {
             entityManager.close();
         }
+        DB.disconnect();
     }
 
     private void handleNewMode(EntityManager entityManager) {
@@ -491,6 +492,7 @@ public class FormController implements Initializable {
         } finally {
             entityManager.close();
         }
+        DB.disconnect();
     }
 
     @FXML
@@ -581,6 +583,7 @@ public class FormController implements Initializable {
         } finally {
             entityManager.close();
         }
+        DB.disconnect();
 
     }
 
@@ -651,6 +654,7 @@ public class FormController implements Initializable {
         } finally {
             entityManager.close();
         }
+        DB.disconnect();
 
         getTags();
         setTagsMenu();
@@ -785,6 +789,7 @@ public class FormController implements Initializable {
         } finally {
             entityManager.close();
         }
+        DB.disconnect();
         return tags;
     }
 
